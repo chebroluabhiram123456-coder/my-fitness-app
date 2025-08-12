@@ -1,5 +1,5 @@
-name: web_wrapper_app
-description: A simple WebView wrapper for your Replit web app
+name: fitquest_webview
+description: A Flutter app loading your Replit fitness app URL.
 publish_to: "none"
 version: 1.0.0+1
 
@@ -13,5 +13,3 @@ dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/www/
