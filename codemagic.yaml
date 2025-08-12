@@ -1,0 +1,16 @@
+workflows:
+  default-workflow:
+    name: Default Workflow
+    environment:
+      flutter: stable
+    scripts:
+      - name: Custom install & build
+        script: |
+          cd FitQuest
+          flutter pub get
+          flutter build apk --release
+    artifacts:
+      - FitQuest/build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      # Disable default dependency install to avoid the error
+      install_dependencies: false
